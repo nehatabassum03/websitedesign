@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Inspire</title>
+  </head>
+  <style>
+    .navigationBar {
+      background-color: rgb(216, 173, 214);
+      overflow: hidden;
+      width: 95%;
+      float: right;
+      display: flex;
+      gap: 50.2rem;
+      position: sticky:
+    }
+    .navigationBar a {
+      float: left;
+      color: #f2f2f2;
+      text-align: end;
+      padding: 12px 48px;
+      text-decoration: none;
+      font-size: 25px;
+      font-family:serif;
+      font-style: italic;
+    }
+    .navigationBar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .navigationBar a.active {
+      background-color: #750643;
+      color: white;
+    }  
+    .background {
+      background-image: url("backgr.jpg");
+      background-position: center;
+      background-size: 1260px 400px;
+      background-repeat: no-repeat;
+      opacity: 0.75;   
+    }
+    .backgroundDemoDiv {
+      width: 96%;
+      height: 250px;
+      margin-top: 10px;
+      border: 0.5px solid rgb(103, 15, 132);
+      padding: 50px 25px;
+    }
 
+    h2{
+      color: black;
+      text-align: center;
+      opacity: 1.2;
+    }
+    p{
+      font-size: 18px;
+      text-align: center;
+    }
+    body{
+      background-color: #f3dbf0;
+    }
+    
+  </style>
+  <body>
+    <img src="logo.jpeg" 
+      alt="Logo" 
+      width="55px" 
+      height="54px">
+    <nav class="navigationBar">
+      <a class="active class1" href="#inspire" onClick="activeinspire()" id="inspire">Inspire</a>
+      <a class="" href="htmlpage2.html" onClick="activecontact()" id="contact">Contact Us</a>
+    </nav>
+    <script type="text/javascript">
+      function activeinspire() {
+        document.getElementById("inspire").classList.add("active");
+        document.getElementById("contact").classList.remove("active");
+      }
+      function activecontact() {
+        document.getElementById("inspire").classList.remove("active");
+        document.getElementById("contact").classList.add("active");
+      }
+    </script>
+    <div class = "backgroundDemoDiv background">
+      <h2>WELCOME TO <i>INSPIRE</i></h2>
+      <p>
+        "Greetings and welcome to inspire!<br> 
+        We are delighted to see you as a part of our community.<br> 
+        Find inspiration, motivation, and resources to nurture<br> 
+        your mind, body, and soul."
+      </p>
+    </div>
+    <div style="width: 50%; float:left; padding:80px 45px;color:rgb(103, 15, 132)">
+      <p style="text-align:justify;line-height: 25px;">
+        Art and Literature are bound together in several ways.Great works of art have inspired great works of literature, great works of literature have inspired art, and together art and literature have simultaneously represented similar movements. Art and literature can be seen weaving around each other, influencing one and another, and being used as a tool to teach students about liberal arts and humanity. Although the works I have selected range from several genres and five centuries, they are related because they refer to great works of literature. All of these works have been used in my literature classrooms as tools to understand specific works or movements.
+      </p>
+    </div>
+    <div style="float:right; padding: 40px 50px 40px 20px;">
+      <img src="book.jpg" 
+        alt="book" 
+        width="460px" 
+        height="300px">
+    </div>
+    <div style="float:left; padding: 40px 50px;">
+      <img src="art.jpg" 
+        alt="art" 
+        width="460px" 
+        height="300px">
+    </div>
+    <div style="width: 50%; float:right; padding:35px 45px 80px 15px;color:rgb(103, 15, 132)">
+      <p style="text-align:justify;line-height: 25px;">
+        The oldest documented forms of art are visual arts, although archeologists suggest early humans also made music. Over time techniques – media – has included painting, sculpture, printmaking and, beginning in the 19th century, photography. Architecture is often included as one of the visual arts; however, like the decorative arts, it involves the creation of objects in which the practical considerations of use are essential in a way that they usually are not in another visual art like a painting. Art may be characterized in terms of mimesis (its “realistic” representation of reality), expression, communication of emotion, or other qualities. Though the definition of what constitutes art is disputed and has changed over time, general descriptions center on the idea of imaginative or technical skill stemming from human agency and creation.
+      </p> 
+    </div>
+    <div style="text-align: center;">
+      <iframe 
+      width="1000" 
+      height="500" 
+      src="https://www.youtube.com/embed/bxYhv2deXxo?autoplay=1&mute=1&controls=1" allowfullscreen></iframe>
+    </div>
+    <div>
+      <p style="font-size: small;padding: 60px 0px 20px;">
+        All  Rights  Reserved.
+      </p>
+    </div>
+  </body>
+</html>
